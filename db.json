@@ -4,12 +4,14 @@
             "name": "peter",
             "phone": "12345",
             "address": "123 high Road",
+            "membership": "premium",
             "id": 1
         },
         {
             "name": "Sally",
             "phone": "6789",
             "address": "456 barns Road",
+            "membership": "premium",
             "id": 2
         }
     ]

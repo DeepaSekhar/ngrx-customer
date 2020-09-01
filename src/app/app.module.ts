@@ -10,6 +10,8 @@ import { CustomerComponent } from './customers/customer/customer.component';
 import { CustomerAddComponent } from './customers/customer-add/customer-add.component';
 import { CustomerEditComponent } from './customers/customer-edit/customer-edit.component';
 import { CustomerListComponent } from './customers/customer-list/customer-list.component';
+import { customerReducer } from './customers/state/customer.reducers';
+
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
   { path: "customers", component: CustomersComponent }
@@ -27,7 +29,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot({ customers: customerReducer }),
     RouterModule.forRoot(appRoutes)
   ],
 
